@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+
+body {
+	/* Use Source Sans Pro from Google Fonts */
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+
+	/* Explain hexadecimal colour values */
+	color: #444444;
+
+	/* to get to the images folder, go up a level */
+	/* and into the images folder itself */
+	background: url(../images/blur-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/* keep the image where it is when we scroll */
+	background-attachment: fixed;
+
+	/* to make the background image fill the screen */
+	background-size: cover;
+}
+
+header {
+	/* Use shorthand background rule */
+	background: url(../images/monster-banner.png) center;
+	/*background-size: cover;*/
+	text-align: center;
+	padding: 90px 0;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+}
+
+/* Intro selector specificity */
+header p {
+	color: #ffffff;
+	font-size: 18px;
+	margin: 0 0 40px 0;
+}
+
+nav {
+	/* Blue from copy.txt */
+	background-color: #FCBBB3;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 25px 25px 25px 25px;
+}
+
+nav a:hover {
+	background-color: #FF8E81;
+}
+
+section {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 30px 30px 30px 30px;
+	background-color: #F6F6F6;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+section img {
+	margin: 0 0 20px 0;
+}
+
+blockquote {
+	background-color: #C1CCB5;
+	color: #ffffff;
+	font-size: 20px;
+
+	max-width: 720px;
+	margin: 30px auto;
+
+	padding: 40px 80px 40px 80px;
+}
+
+footer {
+	text-align: center;
+	padding: 50px;
+}
+
+/* go back and center the text in the intro section and introduce classes */
+.intro {
+	text-align: center;
+}
+
+h3 {
+	font-weight: 700;
+}
+
+a {
+	color: #51617D;
+}
+
+@media screen and (max-width: 720px){
+
+	h1 {
+		font-size: 32px;
+	}
+	header p {
+		font-size: 18px;
+	}
+
+	nav {
+		margin: 0 0 10px 0;
+	}
+
+	/* Have the nav links stack */
+	nav a {
+		display: block;
+		padding: 10px 25px 10px 25px;
+	}
+	section {
+		margin: 0 10px 0 10px;
+	}
+	blockquote {
+		margin: 10px 0 10px 0;
+		padding: 40px;
+	}
+	iframe, img {
+		max-width: 100%;
+	}
+
+}
